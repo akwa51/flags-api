@@ -27,7 +27,7 @@ const Countries = () => {
                     
                     let keyd= String(country.idd.root||0).slice(1)+String(country.idd.suffixes||0).slice(0,3);
                         return (
-                        <article key={keyd+index} className='scInfo'>
+                        <article key={keyd+index} className='scInfo boxChar'>
                         <img className='cflag' src={flag.toString()} alt={name.toString()}/>
                             <div className='countryInfo'>
                                 <h3 >{name}</h3>
